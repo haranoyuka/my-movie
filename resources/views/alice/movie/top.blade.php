@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <!--[if IE 7]>
-<html class="ie ie7" lang="ja" prefix="og: http://ogp.me/ns#">
+<html class="ie ie7" lang="ja" prefix=" ">
 <![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" lang="ja" prefix="og: http://ogp.me/ns#">
+ <!--[if IE 8]>
+ <html class="ie ie8" lang="ja" prefix=" ">
 <![endif]-->
-<!--[if !(IE 7) & !(IE 8)]><!-->
-
+ <!--[if !(IE 7) & !(IE 8)]><!-->
+ <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>アリスの映画紹介サイト</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
 <!--<![endif]-->
-<head>
-<meta charset="UTF-8">
-<meta name="alice" content="width=device-width">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>アリスの映画紹介サイト</title>
-<link></link>
+<head></head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<!-- End Google Tag Manager (noscript) -->
+	<noscript></noscript>
+	<div></div>
+	<header>
+		<div>
+        </div>
+	</header>
+		<figure>
+		</figure>
+		<nav>
+		</nav>
+		<figure>
+		</figure>
+		<main></mein>
+<!-- / main -->
+ <footer></footer>
+ <div>
+<!--/ #container -->
+ </div>
+ <script></script>
+</body>
+</html>
