@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class MovieController extends Controller
 {
-    public function add()
+    public function top()
     {
-        return view('alice.movie.create');
+        return view('alice.movie.top');
     }
 }

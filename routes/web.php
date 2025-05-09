@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 use App\Http\Controllers\Alice\MovieController;
-Route::controller(MovieController::class)->prefix()->group(function() {
-    Route::get('alice/movie/create', 'add');
+Route::controller(MovieController::class)->prefix('alice')->group(function() {
+    Route::get('movie/top', 'top');
 });
