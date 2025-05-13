@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html lang="ja" prefix=" " class="">
+ <html>
  <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
@@ -7,22 +7,21 @@
 	<title>アリスの映画紹介サイト | 映画予告編制作</title>
 	<link rel="shortcut icon" href=" ">
 	<link rel="stylesheet" href=" ">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-	<div id="container">
-				</div>
-			</div>
-		</header>
-		<nav id="nav" class="delayedFadeIn3" role="navigation" style="display: block; opacity: 1;">
-			<ul>
-				<li><a href=""><img src="" alt="TOP" ></a></li>
-				<li><a href=""><img src="" alt="academy" ></a></li>
-				<li><a href=""><img src="" alt="ranking" ></a></li>
-				<li><a href=""><img src="" alt="year" ></a></li>
-				<li><a href=""><img src="" alt="ganle" ></a></li>
-			</ul>
-		</nav>		
-				<main role="main">
-			<div id="main">
+<body>
+  <header>
+	  <div class="container">
+      <div class="header-title-area">
+        <h1>アリスの映画紹介サイト | 映画予告編制作</h1>
+     </div>
+			<ul class="header-navigation">
+				<li><a href="#">TOP</a></li>
+				<li><a href="#">ranking</a></li>
+				<li><a href="#">year</a></li>
+				<li><a href="#">ganle</a></li>
+			</ul>		
 				<section id="top-works">
                       </a>
                     </div>
@@ -37,7 +36,7 @@
                   </div>
                 </div>
 
-                <div class="col x2 match" style="height: 620px;">
+                
                   <figure class="teaser-image">
                     <div class="popup">
                       <a href="</span>
@@ -52,7 +51,6 @@
                     <span class="year">2024</span>
                     <span class="date"></span>
                   </div>
-                </div>
 									
                 <div class="col x2 match" style="height: 620px;">
                   <figure class="teaser-image">
