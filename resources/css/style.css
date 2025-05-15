@@ -31,4 +31,14 @@ header {
     color: #777;
   }
 
+  .header-navigation li {
+    float: left;
+    padding: 0 30px;
+    text-align: center;
+    list-style-type: none;
+  }
   
+  .header-navigation li a {
+    color: #333;
+    text-decoration: none;
+  }
