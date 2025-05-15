@@ -19,5 +19,5 @@ Route::get('/', function () {
 
 use App\Http\Controllers\Alice\MovieController;
 Route::controller(MovieController::class)->prefix('alice')->group(function() {
-    Route::get('movie/top', 'top');
+    Route::get('movie/top', 'add');
 });
