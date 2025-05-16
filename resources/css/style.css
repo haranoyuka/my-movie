@@ -24,12 +24,24 @@ header {
     margin-top: 40px;
     margin-bottom: 30px;
   }
-  
-  .title {
-    font-size: 32px;
+
+  .logo {
+    font-size: 35px;
   }
   .text-sub {
     color: #777;
+  }
+
+  header-navigation {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+  }
+  
+  .header-navigation:after {
+    clear: both;
+    display: block;
+    content: " ";
   }
 
   .header-navigation li {
@@ -50,10 +62,12 @@ header {
   .left-contents {
     width: 600px;
     margin-right: 20px;
-    float: left;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   
   .right-contents {
     width: 300px;
-    float: left;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
