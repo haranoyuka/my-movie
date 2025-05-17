@@ -1,6 +1,6 @@
 body {
-    background-color: #efefef;
-    font-size: 14px;
+  background-color: #cfc6c6;
+  font-size: 14px;
   color: #333;
   margin: 0;
 }
@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5 {
 
 header {
   padding: 80px 0 40px;
-  color: #fff;
+  color: #1d1c1c;
   }
   
   .container {
