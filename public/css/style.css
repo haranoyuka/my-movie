@@ -6,8 +6,8 @@ body {
 }
 
 h1,h2,h3,h4,h5 {
-  margin: 0 0 10px 0;
-  padding: 0;
+  display: inline-block;
+  padding-left: 55%;
 }
 
 header {
@@ -54,7 +54,8 @@ header {
   .header-navigation li a {
     color: #333;
     text-decoration: none;
-    display: block; 
+    display: block;
+    opacity: 1;
     position: relative;
     writing-mode: horizontal-tb;
   }
