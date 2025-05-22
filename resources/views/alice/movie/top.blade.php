@@ -31,7 +31,6 @@
     </header>
     <div class="main">
       <div class="container">
-        <div class="left-contents">
           <div class="card-contents">
             <div class="movie-list">
               <div class="movie-img"><img src="{{ asset('image/image01.jpg') }}" class=""></div>
@@ -42,7 +41,6 @@
               <span class="date">1/17</span>
             </div>
           </div>
-        </div>
         
       </div>
       
