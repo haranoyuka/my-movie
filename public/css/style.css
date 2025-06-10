@@ -26,7 +26,9 @@ header {
 }
 
 .logo {
+  max-width: 100%;
   font-size: 35px;
+  text-align: right;
 }
 
 .text-sub {
@@ -47,20 +49,15 @@ header {
 
 .header-navigation li {
   float: right;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  padding: 0 30px;
   text-align: center;
   list-style-type: none;
-  writing-mode: vertical-rl;
-  display: inline-block;
-  padding-right: 40px;
 }
 
 .header-navigation li a {
   margin-right: 4%;
   color: #333;
-  text-align: right;
+  text-decoration: none;
 }
 
 .d-flex {
@@ -72,6 +69,27 @@ header {
   width: 50%;
 }
 
+.key {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.key-in  {
+  border: solid 0px #000;
+}
+
+.wrapper {
+  margin: auto;
+  padding: 0 80px;
+}
+
+・img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .movie-list {
   width: 600px;
   margin-right: 20px;
@@ -79,15 +97,85 @@ header {
   align-items: flex-end;
 }
 
-.movie-image {
-  content: ".";
-  font-size: 0;
-  position: absolute;
+.wrapper {
+  width: 1280px;
+  margin: auto;
+  padding: 0.80;
+}
+
+.loops {
+  position: relative;
   z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
+}
+
+.loops .row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.loops .row .x2 {
+  width: 50%;
+}
+
+.loops .row .col {
+  position: relative;
+  z-index: 1;
+  flex: auto;
+  margin-bottom: 80px;
+  padding: 0 30px;
+  width: 25%;
+  border: solid 1px #000;
+  border-top: 0;
+  border-bottom: 0;
+  margin-left: -1px;
+}
+
+.loops .row .col .teaser-image {
+  margin-bottom: 30px;
+  padding: 60px 0;
+  background-color: #000;
+}
+
+
+
+.movie-image  {
+  width: auto;
+  height: auto;
+}
+
+.loops .row .col .text-title {
+  font-size: 1.25em;
+  display: block;
+  line-height: 2;
+}
+
+.loops .row .teaser-date {
+  position: absolute;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  right: 30px;
+  text-align: right;
+}
+
+.loops .row .col .teaser-date .year  {
+  font-size: 1.25rem;
+}
+
+.loops .row .col .teaser-date .year{
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.loops .row .col .teaser-date {
+  font-size: 3rem;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.loops .row .col span {
+  display: block;
+  line-height: 2;
 }
