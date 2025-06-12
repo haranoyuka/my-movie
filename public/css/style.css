@@ -36,7 +36,7 @@ header {
 }
 
 .header-navigation {
-  width: auto;
+  width: 100%;
   background-color: #fff;
   padding: 10px 0;
 }
@@ -66,7 +66,7 @@ header {
 }
 
 .card-contents {
-  width: 50%;
+  width: 100%;
 }
 
 #key {
@@ -91,7 +91,7 @@ img {
 }
 
 .movie-list {
-  width: 600px;
+  width: 100%;
   margin-right: 20px;
   justify-content: flex-end;
   align-items: flex-end;
@@ -132,6 +132,7 @@ img {
 }
 
 .loops .row .col .teaser-image {
+  padding: 30px 0;
   margin-bottom: 30px;
   padding: 60px 0;
   background-color: #000;
@@ -181,7 +182,6 @@ img {
   letter-spacing: 0.05em;
 }
 
-.loops .row .col span {
-  display: block;
-  line-height: 2;
+.movie-img img {
+  width: 100% !important;
 }

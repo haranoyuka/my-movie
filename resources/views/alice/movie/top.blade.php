@@ -36,7 +36,7 @@
                     <div class="card-contents">
                       <div class="movie-list">
                         <div class="movie-img"><img src="{{ asset('image/image01.jpg') }}" class=""></div>
-                        <h2 class="text-title">バックインアクション</h2>
+                        <span class="text-title">バックインアクション</span>
                       </div>
                     </div>
                   </span>
@@ -48,16 +48,17 @@
                 </div>
             </div>
             
-              <div class="col x2 match style="hight: 1377px;>
+            <div class="col x2 match" style="height 1377:">
                 <figure class="teaser-image">
                  <div class="popup">
+                 <span class="image">
                    <div class="card-contents">
                       <div class="movie-list">
                         <div class="movie-img"><img src="{{ asset('image/image02.jpg') }}" class=""></div>
-                        <h2 class="text-title">ミステリと言うなかれ</h2>
+                        <span class="text-title">ミステリと言うなかれ</span>
                       </div>
                     </div>
-                  </div>
+                  </span>
                 </figure>
                 <div class="teaser-date">
                   <span class="year">2023</span>
@@ -65,16 +66,18 @@
                 </div>
               </div>
 
-              <div class="col x2 match style="hight: 1377px;>
+              <div class="col x2 match" style="height 1377:">
                 <figure class="teaser-image">
                   <div class="popup">
+                   <span class="image">
                     <div class="card-contents">
                       <div class="movie-list">
                         <div class="movie-img"><img src="{{ asset('image/image03.jpg') }}" class=""></div>
-                        <h2 class="text-title">ジュラシックワールド</h2>
+                        <span class="text-title">ジュラシックワールド</span>
                       </div>
                     </div>
-                 </div>
+                    </div>
+                  </span> 
                 </figure>
                 <div class="teaser-date">
                   <span class="year">2025</span>
@@ -82,39 +85,43 @@
                 </div>
               </div>
 
-              <div class="col x2 match style="hight: 1377px;>
+              <div class="col x2 match" style="height 1377:">
                 <figure class="teaser-image">
-                 <div class="popup">
-                    <div class="card-contents">
-                      <div class="movie-list">
-                        <div class="movie-img"><img src="{{ asset('image/image04.jpg') }}" class=""></div>
-                        <h2 class="text-title">翔んで埼玉</h2>
-                      </div>
+                    <div class="popup">
+                      <span class="image">
+                        <div class="card-contents">
+                          <div class="movie-list">
+                            <div class="movie-img"><img src="{{ asset('image/image04.jpg') }}" class=""></div>
+                            <span class="text-title">翔んで埼玉</span>
+                          </div>
+                        </div>
+                      </span> 
                     </div>
-                 </div>
-                </figure>
-                      <div class="teaser-date">
-                        <span class="year">2019</span>
-                        <span class="date">2/22</span>
-                      </div>
-                    </div>
+                  </figure>
+                  <div class="teaser-date">
+                    <span class="year">2019</span>
+                    <span class="date">2/22</span>
+                  </div>
+              </div>
             
-              <div class="col x2 match style="hight: 1377px;>
+              <div class="col x2 match" style="height 1377:">
                 <figure class="teaser-image">
                   <div class="popup">
-                    <div class="card-contents">
-                      <div class="movie-list">
-                        <div class="movie-img"><img src="{{ asset('image/image05.jpg') }}" class=""></div>
-                        <h2 class="text-title">死霊館</h2>
+                    <span class="image">
+                      <div class="card-contents">
+                        <div class="movie-list">
+                          <div class="movie-img"><img src="{{ asset('image/image05.jpg') }}" class=""></div>
+                          <span class="text-title">死霊館</span>
+                        </div>
                       </div>
-                    </div>
+                    </span>   
                   </div>
                 </figure>
-                      <div class="teaser-date">
-                        <span class="year">2019</span>
-                        <span class="date">2/22</span>
-                      </div>
-                    </div>
+                  <div class="teaser-date">
+                    <span class="year">2019</span>
+                    <span class="date">2/22</span>
+                  </div>
+              </div>
 
                 <div class="col x2 match style="hight: 1377px;>
                   <figure class="teaser-image">
@@ -122,19 +129,18 @@
                       <div class="card-contents">
                         <div class="movie-list">
                           <div class="movie-img"><img src="{{ asset('image/image06.jpg') }}" class=""></div>
-                          <h2 class="text-title">シンデレラ</h2>
+                          <span class="text-title">シンデレラ</span>
                         </div>
                      </div>
                     </div>
                   </figure>
-                </div>
                   <div class="teaser-date">
                     <span class="year">2015</span>
                     <span class="date">1/17</span>
                   </div>
                 </div>
             </div>
-         </div>
+          </div>
         </div>
      </div>
   </body>
