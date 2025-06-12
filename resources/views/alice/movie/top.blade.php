@@ -10,7 +10,7 @@
     <header>
       <div class="container">
       <div class="header-title-area">
-      <div class="logo">アリスの映画紹介サイト</div>
+      <h1 id="logo">アリスの映画紹介サイト</h1>
       </div>
         <ul class="header-navigation">
           <li><a href="#">TOP</a></li>
@@ -20,8 +20,8 @@
         </ul>
       </div>
     </header>
-    <div class="key">
-    </div>
+    <fugure id="key">
+    </figure>
     <div id="key-in" class="wrapper">
       <img src="{{ asset('image/top-key.jpg') }}" class=""></div>
     </div>
@@ -29,15 +29,17 @@
       <div class="wrapper">
         <div class="loops">
           <div class="row type-works">
-            <div class="col x2 match style="hight: 1377px;>
+            <div class="col x2 match" style="height 1377:">
               <figure class="teaser-image">
                 <div class="popup">
-                  <div class="card-contents">
-                    <div class="movie-list">
-                      <div class="movie-img"><img src="{{ asset('image/image01.jpg') }}" class=""></div>
-                      <h2 class="text-title">バックインアクション</h2>
+                  <span class="image">
+                    <div class="card-contents">
+                      <div class="movie-list">
+                        <div class="movie-img"><img src="{{ asset('image/image01.jpg') }}" class=""></div>
+                        <h2 class="text-title">バックインアクション</h2>
+                      </div>
                     </div>
-                  </div>
+                  </span>
                </div>
               </figure>
                 <div class="teaser-date">

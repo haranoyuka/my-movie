@@ -36,9 +36,9 @@ header {
 }
 
 .header-navigation {
-  width: 100%;
+  width: auto;
   background-color: #fff;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .header-navigation:after {
@@ -69,12 +69,12 @@ header {
   width: 50%;
 }
 
-.key {
+#key {
   position: relative;
   margin-bottom: 80px;
 }
 
-.key-in  {
+.key-in {
   border: solid 0px #000;
 }
 
@@ -83,7 +83,7 @@ header {
   padding: 0 80px;
 }
 
-・img {
+img {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -100,7 +100,7 @@ header {
 .wrapper {
   width: 1280px;
   margin: auto;
-  padding: 0.80;
+  padding: 0.8;
 }
 
 .loops {
@@ -108,7 +108,7 @@ header {
   z-index: 1;
 }
 
-.loops .row{
+.loops .row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -137,15 +137,25 @@ header {
   background-color: #000;
 }
 
+.loops .row .col .teaser-image .image {
+  position: relative;
+}
 
+.loops .row .col span {
+  display: block;
+  line-height: 2;
+}
 
-.movie-image  {
-  width: auto;
-  height: auto;
+.movie-img.sizu-full {
+  width: 1200px;
+  height: 630px;
 }
 
 .loops .row .col .text-title {
   font-size: 1.25em;
+}
+
+.loops .row .col .span {
   display: block;
   line-height: 2;
 }
@@ -157,11 +167,7 @@ header {
   text-align: right;
 }
 
-.loops .row .col .teaser-date .year  {
-  font-size: 1.25rem;
-}
-
-.loops .row .col .teaser-date .year{
+.loops .row .col .teaser-date .year {
   font-size: 1.25rem;
   line-height: 1.25;
   font-weight: 500;
