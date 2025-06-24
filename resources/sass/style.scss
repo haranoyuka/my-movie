@@ -5,7 +5,10 @@ body {
     margin: 0;
   }
   
-  
+  .d-flex{
+    display: flex;
+    flex-wrap: wrap;
+  }
   
   header {
     padding: 80px 0 40px;
@@ -179,27 +182,6 @@ body {
     width: 100% !important;
   }
 
-  #profile .wrapper {
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
-  #profile {
-    margin-bottom: -3px;
-    border-top: solid 3px #000;
-    border-bottom: solid 3px #000;
-    padding: 80px 0;
-    font-weight: bold;
-}
-
-  #profile .cnt-l {
-    width: 35%;
-}
-
-.cnt-l {
-  float: left;
-}
-
 .hd-main {
   margin-bottom: 2rem;
   font-size: 1rem;
@@ -212,30 +194,32 @@ h1, h2, h3, h4, h5, h6, p, pre, dt, dd, li {
   display: block;
 }
 
-dt {
-  font-weight: normal;
-}
-
-dt, dd {
-  vertical-align: top;
-  padding: 1em 0;
-}
-
-#profile .cnt-r {
-  width: 60%;
-  float: right;
-}
-
 .map-image {
   height: 400px;
 }
 
 footer {
   border-top: solid 3px #000;
-  padding: 20px 0;
+  padding: 80px 0;
   font-weight: bold;
   letter-spacing: 0.1em;
   width: 100%;
+  #profile{
+    .con-l{
+      width: 30%;
+    }
+    .con-r{
+      width: 70%;
+    }
+    dt{
+      width: 35%;
+      margin: 0;
+    }
+    dd{
+      width: 60%;
+      margin: 0;
+    }
+  }
 }
 
 footer .copyright {

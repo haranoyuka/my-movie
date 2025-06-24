@@ -81,7 +81,7 @@
                 </figure>
                 <span class="text-title">ジュラシックワールド</span>     
                 <div class="teaser-date">
-                  <span class="year">2025</span>
+                  <span class="year">2015</span>
                   <span class="date">1/17</span>
                 </div>
               </div>
@@ -118,60 +118,59 @@
                   </div>
                 </figure>
                 <span class="text-title">死霊館</span>       
-                  <div class="teaser-date">
-                    <span class="year">2019</span>
-                    <span class="date">2/22</span>
-                  </div>
+                <div class="teaser-date">
+                  <span class="year">2019</span>
+                  <span class="date">2/22</span>
+                </div>
              </div>
 
-                <div class="col x2 match style="hight: 1377px;>
-                  <figure class="teaser-image">
-                    <div class="popup">
-                      <span class="image">
-                        <div class="card-contents">
-                          <div class="movie-list">
-                            <div class="movie-img"><img src="{{ asset('image/image006.png') }}" class=""></div>
-                          </div>
-                        </div>
-                      <span>
+            <div class="col x2 match style="hight: 1377px;>
+              <figure class="teaser-image">
+                <div class="popup">
+                  <span class="image">
+                    <div class="card-contents">
+                      <div class="movie-list">
+                        <div class="movie-img"><img src="{{ asset('image/image006.png') }}" class=""></div>
+                      </div>
                     </div>
-                  </figure>
-                  <span class="text-title">シンデレラ</span>
-                  <div class="teaser-date">
-                    <span class="year">2015</span>
-                    <span class="date">1/17</span>
-                  </div>
+                  <span>
                 </div>
-
-                <section id="profile">
-                  <div class="wrapper">
-                    <div class="d-flex">
-                      <div class="con-l">
-                        <h2 class="hd-main">PROFILE</h2>
-                          <dl class="d-flex">
-                            <dt>社名</dt>
-                            <dd>シロクラフト</dd>
-                            <dt>代表取締役</dt>
-                            <dd>真本英樹</dd>
-                            <dd>03-3505-5535</dd>
-                            <dd>contact</dd>
-                          </dl>
-                      </div>
-                      <div class="con-r">
-                        <div class="footer-img">
-                        <img src="{{ asset('image/image07.png') }}" class="map-image">  
-                      </div>
-                    </div>
-                  </div>
-                </section>
+              </figure>
+              <span class="text-title">シンデレラ</span>
+              <div class="teaser-date">
+                <span class="year">2015</span>
+                <span class="date">1/17</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>      
-      <footer>
-        <div class="copyright">
-          <small> 2023 alice movie-intro </small>
+    </main>
+    <footer>
+      <section id="profile">
+        <div class="wrapper">
+          <div class="d-flex">
+            <div class="con-l">
+              <h2 class="hd-main">PROFILE</h2>
+                <dl class="d-flex">
+                  <dt>サイト名</dt>
+                  <dd>アリスの映画紹介サイト</dd>
+                  <dt>サイト管理者</dt>
+                  <dd>yuka</dd>
+                  <dt>お問い合わせ先</dt>
+                  <dd>01-0000-0101</dd>
+                </dl>
+            </div>
+            <div class="con-r">
+              <div class="footer-img">
+              <img src="{{ asset('image/image07.png') }}" class="map-image">  
+            </div>
+          </div>
         </div>
-      </footer>
+      </section>
+      <div class="copyright">
+        <small> 2023 alice movie-intro </small>
+      </div>
+    </footer>
   </body>
 </html>

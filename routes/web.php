@@ -13,14 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 use App\Http\Controllers\Alice\MovieController;
-Route::controller(MovieController::class)->prefix('alice')->group(function() {
-    Route::get('movie/top', 'add');
+Route::controller(MovieController::class)->group(function() {
+    Route::get('/', 'add')->middleware('auth');
     Route::get('movie/create', 'set');
+    Route::get('movie/create', 'set')->name('movie.set');
+    Route::post('movie/create', 'create')->name('movie.create');
 });
 Auth::routes();
 
