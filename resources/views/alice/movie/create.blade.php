@@ -1,5 +1,5 @@
 @extends('layouts.movie')
-@section('title', 'ニュースの新規作成')
+@section('title', '映画の新規作成')
 
 @section('content')
     <div class="container">

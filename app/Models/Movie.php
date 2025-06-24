@@ -16,4 +16,9 @@ class Movie extends Model
         'director' => 'required',
         'review' => 'required',
     );
+
+    public function histories()
+    {
+        return $this->hasMany('App\Models\History');
+    }
 }
