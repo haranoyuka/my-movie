@@ -1,4 +1,4 @@
-@extends('layouts.movie')
+@extends('layouts.alice')
 @section('title', '映画の新規作成')
 
 @section('content')

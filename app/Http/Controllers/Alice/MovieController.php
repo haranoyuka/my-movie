@@ -19,9 +19,9 @@ class MovieController extends Controller
     public function create(Request $request)
     {
         $this->validate($request, Movie::$rules);
-        return redirect('alice/movie/create');
+        return redirect('movie/create');
 
-        $movie = new Movie;
+        $news = new Movie;
         $form = $request->all();
 
         
@@ -41,20 +41,20 @@ class MovieController extends Controller
         $movie->fill($form);
         $movie->save();
 
-        return redirect('alice/movie/create');
+        return redirect('movie/create');
     }
 
     public function index(Request $request)
     {
         $cond_title = $request->cond_title;
-        if ($cond_title != '') {
+        if ($cond_title != null) {
             // 検索されたら検索結果を取得する
             $posts = Movie::where('title', $cond_title)->get();
         } else {
             // それ以外はすべてのニュースを取得する
             $posts = Movie::all();
         }
-        return view('admin.news.index', ['posts' => $posts, 'cond_title' => $cond_title]);
+        return view('alice.movie.index', ['posts' => $posts, 'cond_title' => $cond_title]);
     }
 
     // 以下を追記

@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+Auth::routes();
 
 use App\Http\Controllers\Alice\MovieController;
 Route::controller(MovieController::class)->group(function() {
