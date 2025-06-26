@@ -24,19 +24,19 @@
                     <div class="form-group row">
                         <label class="col-md-2">ジャンル</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="genre" value="{{ old('genre') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">監督</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="director" value="{{ old('director') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">感想</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="review" rows="20">{{ old('treview') }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">

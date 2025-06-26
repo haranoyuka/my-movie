@@ -33,7 +33,9 @@
                             <tr>
                                 <th width="10%">ID</th>
                                 <th width="20%">タイトル</th>
-                                <th width="50%">本文</th>
+                                <th width="20%">ジャンル</th>
+                                <th width="20%">監督</th>
+                                <th width="50%">感想</th>
                                 <th width="10%">操作</th>
                             </tr>
                         </thead>
@@ -42,13 +44,15 @@
                                 <tr>
                                     <th>{{ $movie->id }}</th>
                                     <td>{{ Str::limit($movie->title, 100) }}</td>
-                                    <td>{{ Str::limit($movie->body, 250) }}</td>
+                                    <td>{{ Str::limit($movie->genre, 100) }}</td>
+                                    <td>{{ Str::limit($movie->director, 100) }}</td>
+                                    <td>{{ Str::limit($movie->review, 250) }}</td>
                                     <td>
                                         <div>
                                             <a href="{{ route('alice.movie.edit', ['id' => $movie->id]) }}">編集</a>
                                         </div>
                                         <div>
-                                            <a href="{{ route('admin.news.delete', ['id' => $news->id]) }}">削除</a>
+                                            <a href="{{ route('alice.movie.delete', ['id' => $movie->id]) }}">削除</a>
                                         </div>
                                     </td>
                                 </tr>

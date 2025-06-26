@@ -168,6 +168,5 @@ return [
     'attributes' => [
         'title' => 'タイトル',
         'genre' => 'ジャンル'
-    ],
-
+     ],
 ];

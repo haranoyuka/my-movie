@@ -25,3 +25,6 @@ Route::controller(MovieController::class)->group(function() {
     Route::post('movie/edit', 'update')->name('movie.update');
     Route::get('movie/delete', 'delete')->name('news.delete');
 });
+
+use App\Http\Controllers\MovieController as PublicMovieController;
+Route::get('/', [PublicMovieController::class, 'index'])->name('movie.index');

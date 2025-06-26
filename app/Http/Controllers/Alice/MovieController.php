@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Alice;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Movie;
+use App\Models\History;
+use Carbon\Carbon;
 
 class MovieController extends Controller
 {
@@ -18,24 +21,28 @@ class MovieController extends Controller
     }
     public function create(Request $request)
     {
+        // dd("createが呼ばれた");//
+        // dd($request);
         $this->validate($request, Movie::$rules);
-        return redirect('movie/create');
+        // return redirect('movie/create');
 
-        $news = new Movie;
+
+        $movie = new Movie;
         $form = $request->all();
 
         
         if (isset($form['image'])) {
             $path = $request->file('image')->store('public/image');
-            $news->image_path = basename($path);
+            $movie->image_path = basename($path);
         } else {
-            $movie->image_path = null;
+            $movie->image_path = "";
         }
 
         // フォームから送信されてきた_tokenを削除する
         unset($form['_token']);
         // フォームから送信されてきたimageを削除する
         unset($form['image']);
+        // dd($form);
 
         // データベースに保存する
         $movie->fill($form);
@@ -61,8 +68,8 @@ class MovieController extends Controller
     public function edit(Request $request)
     {
         // News Modelからデータを取得する
-        $news = Movie::find($request->id);
-        if (empty($news)) {
+        $movie = Movie::find($request->id);
+        if (empty($movie)) {
             abort(404);
         }
         return view('alice.movie.edit', ['movie_form' => $movie]);
@@ -71,43 +78,46 @@ class MovieController extends Controller
     public function update(Request $request)
     {
         // Validationをかける
-        $this->validate($request, News::$rules);
+        $this->validate($request, movie::$rules);
         // News Modelからデータを取得する
-        $news = News::find($request->id);
+        $movie = Movie::find($request->id);
         // 送信されてきたフォームデータを格納する
-        $news_form = $request->all();
-        unset($news_form['_token']);
-
-        // 該当するデータを上書きして保存する
-        $news->fill($news_form)->save();
-
-    
-        // Validationをかける
-        $this->validate($request, News::$rules);
-        // News Modelからデータを取得する
-        $news = News::find($request->id);
-        // 送信されてきたフォームデータを格納する
-        $news_form = $request->all();
+        $movie = $request->all();
 
         if ($request->remove == 'true') {
-            $news_form['image_path'] = null;
+            $movie_form['image_path'] = null;
         } elseif ($request->file('image')) {
             $path = $request->file('image')->store('public/image');
-            $news_form['image_path'] = basename($path);
+            $movie_form['image_path'] = basename($path);
         } else {
-            $news_form['image_path'] = $news->image_path;
+            $movie_form['image_path'] = $movie->image_path;
         }
 
-        unset($news_form['image']);
-        unset($news_form['remove']);
-        unset($news_form['_token']);
+        unset($movie_form['image']);
+        unset($movie_form['remove']);
+        unset($movie_form['_token']);
 
         // 該当するデータを上書きして保存する
         $news->fill($news_form)->save();
+
+        $history = new History();
+        $history->movie_id = $movie->id;
+        $history->edited_at = Carbon::now();
+        $history->save();
 
         return redirect('alice/movie');
     }
 
+    public function delete(Request $request)
+    {
+        // 該当するNews Modelを取得
+        $news = Movie::find($request->id);
+
+        // 削除する
+        $movie->delete();
+
+        return redirect('alice/movie/');
+    }
    
     // 追記ここまで
     
