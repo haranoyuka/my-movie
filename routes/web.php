@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 use App\Http\Controllers\Alice\MovieController;
-Route::controller(MovieController::class)->group(function() {
-    Route::get('/', 'add')->middleware('auth');
+Route::controller(MovieController::class)->middleware('auth')->group(function() {
+    Route::get('/top', 'add')->name('movie.add');
     Route::get('movie/create', 'set')->name('movie.set');
     Route::post('movie/create', 'create')->name('movie.create');
     Route::get('movie', 'index')->name('movie.index');

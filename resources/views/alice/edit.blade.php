@@ -42,7 +42,7 @@
                         <div class="col-md-10">
                             <input type="file" class="form-control-file" name="image">
                             <div class="form-text text-info">
-                                設定中: {{ $news_form->image_path }}
+                                設定中: {{ $movie_form->image_path }}
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">

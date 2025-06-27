@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>アカデミー賞受賞作品</h2>
-                <form action="{{ route('movie.create') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('') }}" method="post" enctype="multipart/form-data">
 
                     @if (count($errors) > 0)
                         <ul>

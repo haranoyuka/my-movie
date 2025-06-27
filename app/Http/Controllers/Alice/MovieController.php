@@ -98,7 +98,7 @@ class MovieController extends Controller
         unset($movie_form['_token']);
 
         // 該当するデータを上書きして保存する
-        $news->fill($news_form)->save();
+        $movie->fill($movie_form)->save();
 
         $history = new History();
         $history->movie_id = $movie->id;
@@ -116,7 +116,7 @@ class MovieController extends Controller
         // 削除する
         $movie->delete();
 
-        return redirect('alice/movie/');
+        return redirect('alice/movie');
     }
    
     // 追記ここまで
