@@ -1,17 +1,12 @@
-{{-- layouts/movie.blade.phpを読み込む --}}
-@extends('layouts.movie')
+@extends('layouts.alice')
+@section('title', '作品ランキング')
 
-
-{{-- movie.blade.phpの@yield('title')に'アカデミー賞受賞作品'を埋め込む --}}
-@section('title', 'アカデミー賞受賞作品')
-
-{{-- alice.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>アカデミー賞受賞作品</h2>
-                <form action="{{ route('') }}" method="post" enctype="multipart/form-data">
+                <h2>作品ランキング</h2>
+                <form action="{{ route('movie.ranking') }}" method="post" enctype="multipart/form-data">
 
                     @if (count($errors) > 0)
                         <ul>
@@ -21,29 +16,34 @@
                         </ul>
                     @endif
                     <div class="form-group row">
+                        <label class="col-md-2">順位</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="ranking" value="{{ old('ranking') }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label class="col-md-2">タイトル</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="title" value="{{ old('title') }}">
                         </div>
                     </div>
+
                     <div class="form-group row">
-                        <label class="col-md-2">ジャンル</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                        <label class="col-md-2">評価</label>
+                        <div class="wrap">
+                            <span class="rate rate0"></span>
+                            <span class="rate rate1"></span>
+                            <span class="rate rate1-5"></span>
+                            <span class="rate rate2"></span>
+                            <span class="rate rate2-5"></span>
+                            <span class="rate rate3"></span>
+                            <span class="rate rate3-5"></span>
+                            <span class="rate rate4"></span>
+                            <span class="rate rate4-5"></span>
+                            <span class="rate rate5"></span>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label class="col-md-2">監督</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2">コメント</label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
-                        </div>
-                    </div>
+
                     <div class="form-group row">
                         <label class="col-md-2">画像</label>
                         <div class="col-md-10">

@@ -165,6 +165,12 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'title' => 'タイトル',
+        'genre' => 'ジャンル',
+        'director' => '監督',
+        'review' => '感想'
+
+    ],
 
 ];

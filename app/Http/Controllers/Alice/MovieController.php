@@ -118,7 +118,6 @@ class MovieController extends Controller
 
         return redirect('alice/movie');
     }
-   
     // 追記ここまで
     
 }
