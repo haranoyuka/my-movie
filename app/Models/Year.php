@@ -18,4 +18,5 @@ class Year extends Model
         'starring' => 'required',
         'synopsis' => 'required',
     );
+
 }

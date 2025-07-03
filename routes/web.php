@@ -17,7 +17,7 @@ Auth::routes();
 
 use App\Http\Controllers\Alice\MovieController;
 Route::controller(MovieController::class)->middleware('auth')->group(function() {
-    Route::get('/top', 'add')->name('movie.add');
+    Route::get('/', 'add')->name('movie.add');
     Route::get('movie/create', 'set')->name('movie.set');
     Route::post('movie/create', 'create')->name('movie.create');
     Route::get('movie', 'index')->name('movie.index');
@@ -27,8 +27,6 @@ Route::controller(MovieController::class)->middleware('auth')->group(function() 
 
 });
 
-use App\Http\Controllers\MovieController as PublicMovieController;
-Route::get('/', [PublicMovieController::class, 'index'])->name('movie.index');
 
     use App\Http\Controllers\Alice\RankingController;
     Route::controller(RankingController::class)->middleware('auth')->group(function() {
@@ -40,18 +38,16 @@ Route::get('/', [PublicMovieController::class, 'index'])->name('movie.index');
     Route::get('ranking/delete', 'delete')->name('ranking.delete');
 });
 
-use App\Http\Controllers\RankingController as PublicRankingController;
-Route::get('/', [PublicRankingController::class, 'index'])->name('ranking.index');
 
     use App\Http\Controllers\Alice\YearController;
     Route::controller(YearController::class)->middleware('auth')->group(function() {
     Route::get('movie/year', 'sort')->name('movie.sort');
     Route::post('movie/year', 'year')->name('movie.year');
-    Route::get('year', 'index')->name('year.index');
+    Route::get('alice/year', 'index')->name('year.index');
     Route::get('year/edit', 'edit')->name('year.edit');
     Route::post('year/edit', 'update')->name('year.update');
     Route::get('year/delete', 'delete')->name('year.delete');
 });
 
 use App\Http\Controllers\YearController as PublicYearController;
-Route::get('/', [PublicYearController::class, 'index'])->name('year.index');
+Route::get('/year', [PublicYearController::class, 'index'])->name('publicyear.index');

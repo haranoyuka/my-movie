@@ -50,6 +50,7 @@ class YearController extends Controller
         } else {
             // それ以外はすべてのニュースを取得する
             $posts = Year::all();
+            $cond_title = "";
         }
         return view('alice.year.index', ['posts' => $posts, 'cond_title' => $cond_title]);
     }
@@ -88,6 +89,11 @@ class YearController extends Controller
 
         // 該当するデータを上書きして保存する
         $year->fill($year_form)->save();
+
+        $yearhistory = new YearHistory();
+        $yearhistory->year_id = $year->id;
+        $yearhistory->edited_at = Carbon::now();
+        $yearhistory->save();
 
         return redirect('alice/year');
     }

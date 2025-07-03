@@ -8,10 +8,10 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <a href="{{ route('alice.year.sort') }}" role="button" class="btn btn-primary">新規作成</a>
+                <a href="{{ route('movie.sort') }}" role="button" class="btn btn-primary">新規作成</a>
             </div>
             <div class="col-md-8">
-                <form action="{{ route('alice.year.index') }}" method="get">
+                <form action="{{ route('year.index') }}" method="get">
                     <div class="form-group row">
                         <label class="col-md-2">タイトル</label>
                         <div class="col-md-8">

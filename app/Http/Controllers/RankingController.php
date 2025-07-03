@@ -18,9 +18,7 @@ class RankingController extends Controller
             $headline = null;
         }
 
-        // news/index.blade.php ファイルを渡している
-        // また View テンプレートに headline、 posts、という変数を渡している
-        return view('ranking.index', ['headline' => $headline, 'posts' => $posts]);
+        return view('alice.ranking.index', ['headline' => $headline, 'posts' => $posts]);
     }
     //
 }

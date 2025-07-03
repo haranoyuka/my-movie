@@ -13,10 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('histories', function (Blueprint $table) {
+        Schema::create('years', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('movie_id');
-            $table->string('edited_at');
+            $table->string('year');
+            $table->string('title');
+            $table->string('director');
+            $table->string('starring');
+            $table->string('synopsis');
+            $table->string('image_path')->nullable(); 
             $table->timestamps();
         });
     }
@@ -25,9 +29,10 @@ return new class extends Migration
      * Reverse the migrations.
      *
      * @return void
+     * 
      */
     public function down()
     {
-        Schema::dropIfExists('histories');
+        Schema::dropIfExists('years');
     }
 };

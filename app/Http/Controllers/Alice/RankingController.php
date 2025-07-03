@@ -88,6 +88,11 @@ class RankingController extends Controller
         // 該当するデータを上書きして保存する
         $ranking->fill($ranking_form)->save();
 
+        $rankinghistory = new RankingHistory();
+        $rankinghistory->ranking_id = $ranking->id;
+        $rankinghistory->edited_at = Carbon::now();
+        $rankinghistory->save();
+
         return redirect('alice/ranking');
     }
    
