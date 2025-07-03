@@ -167,6 +167,24 @@ return [
 
     'attributes' => [
         'title' => 'タイトル',
-        'genre' => 'ジャンル'
+        'genre' => 'ジャンル',
+        'director' => '監督',
+        'review' => '感想'
+     ],
+
+     'attributes' => [
+        'ranking' => 'ランキング',
+        'title' => 'タイトル',
+        'director' => '監督',
+        'review' => '評価',
+     ],
+
+     'attributes' => [
+        'year' => '公開年',
+        'title' => 'タイトル',
+        'director' => '監督',
+        'starring' => '主演',
+        'synopsis' => 'あらすじ'
+        
      ],
 ];

@@ -27,23 +27,12 @@
                             <input type="text" class="form-control" name="title" value="{{ old('title') }}">
                         </div>
                     </div>
-
                     <div class="form-group row">
-                        <label class="col-md-2">評価</label>
-                        <div class="wrap">
-                            <span class="rate rate0"></span>
-                            <span class="rate rate1"></span>
-                            <span class="rate rate1-5"></span>
-                            <span class="rate rate2"></span>
-                            <span class="rate rate2-5"></span>
-                            <span class="rate rate3"></span>
-                            <span class="rate rate3-5"></span>
-                            <span class="rate rate4"></span>
-                            <span class="rate rate4-5"></span>
-                            <span class="rate rate5"></span>
-                        </div>
+                    <label class="col-md-2">評価</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="review" value="{{ old('review') }}">
+                        </div>       
                     </div>
-
                     <div class="form-group row">
                         <label class="col-md-2">画像</label>
                         <div class="col-md-10">

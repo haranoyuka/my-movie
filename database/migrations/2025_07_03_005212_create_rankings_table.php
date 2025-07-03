@@ -13,17 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('year', function (Blueprint $table) {
+        Schema::create('rankings', function (Blueprint $table) {
             $table->id();
-            $table->string('year'); // ニュースのタイトルを保存するカラム
+            $table->string('ranking'); // ニュースのタイトルを保存するカラム
             $table->string('title');
-            $table->string('director');
-            $table->string('starring');
-            $table->string('synopsis');  // ニュースの本文を保存するカラム
-            $table->string('image_path')->nullable();  // 画像のパスを保存するカラム
+            $table->string('review');  // ニュースの本文を保存するカラム
+            $table->string('image_path')->nullable(); 
             $table->timestamps();
         });
-        //
     }
 
     /**
@@ -33,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('year');
+        Schema::dropIfExists('rankings');
     }
 };

@@ -13,14 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ranking', function (Blueprint $table) {
+        Schema::create('ranking_histories', function (Blueprint $table) {
             $table->id();
-            $table->string('ranking');
-            $table->string('title'); // ニュースのタイトルを保存するカラ  // ニュースの本文を保存するカラム
-            $table->string('image_path')->nullable();  // 画像のパスを保存するカラム
+            $table->bigInteger('ranking_id');
+            $table->string('edited_at');
             $table->timestamps();
         });
-        //
     }
 
     /**
@@ -30,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ranking');
+        Schema::dropIfExists('ranking_histories');
     }
 };
